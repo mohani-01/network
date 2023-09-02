@@ -22,7 +22,7 @@
 
 .middle-everything {
     width: 700px;
-    /* border: 2px solid black; */
+    border: 5px solid black;
     padding: 1rem;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     width: 100%;
     padding: 0.5rem;
-    /* border: 2px solid black; */
+    border: 3px solid black;
 }
 
 .user-icon {
@@ -39,7 +39,7 @@
     
     width: 4rem;
     padding: 0.5rem;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
 }
 
 .user-icon > svg {
@@ -47,11 +47,11 @@
     color: rgb(42, 121, 59);
     height: max-content;
     text-align: center;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 .post-area {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     width: 100%;
     padding: 1rem 0.25rem 0px 0.5rem;
 }
@@ -68,7 +68,7 @@
 #submit-post {
     display: flex;
     justify-content: flex-end;
-    /* border: 2px solid firebrick; */
+    border: 2px solid firebrick;
 
     padding: 0.5rem;
 }
@@ -85,4 +85,40 @@
 
 #input-post:disabled {
     background-color: rgba(128, 128, 128, 0.555);
+}
+
+
+.posts {
+    border: 2px solid green;
+}
+
+.username {
+    display: flex;
+    border: 2px solid violet;
+}
+
+.user-image {
+    width: 4rem;
+    border: 1px solid gold;
+}
+
+.user-username {
+    border: 4px solid goldenrod;
+    width: 100%;
+}
+.post-content {
+    padding: 1rem;
+}
+
+
+.post-info {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid burlywood;
+}
+
+
+.post-info > div {
+    width: 100%;
+    border: 2px solid rebeccapurple;
 }
