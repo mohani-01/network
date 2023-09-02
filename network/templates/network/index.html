@@ -11,8 +11,8 @@
         </div>
 
         <div class="middle-everything">
-
-            <form id="form-post" action="#">
+            {% if user.is_authenticated %}
+            <form id="form-post" action="{% url 'addpost' %}">
             <div class="new-post">
 
                         <div id="user-post" class="user-icon">
@@ -25,8 +25,8 @@
 
                         <!-- <div id="add-new-post">Add New Post</div> -->
                         <div class="post-area">
-
-                            <textarea  id="text-post" placeholder="Something To Share?"></textarea>
+                            {{ new_post.post }}
+                            <!-- <textarea  id="text-post" placeholder="Something To Share?"></textarea> -->
                             <div id="submit-post">
                                 <input id="input-post" type="submit" value="Post">
                             </div>
@@ -34,6 +34,7 @@
                     
                 </div>
             </form>
+            {% endif %}
             
             <div class="posts">
 
