@@ -59,6 +59,10 @@
 #text-post {
     border: none;
     width: 100%;
+    /* height: 1000px; */
+
+    /* resize: none; */
+    /* overflow: hidden; */
 }
 
 #text-post:focus {
@@ -106,9 +110,9 @@
     border: 4px solid goldenrod;
     width: 100%;
 }
-.post-content {
-    padding: 1rem;
-}
+    .post-content {
+        padding: 1rem;
+    }
 
 
 .post-info {

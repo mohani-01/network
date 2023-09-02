@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     document.querySelector('#form-post').addEventListener('click', () => newPost());
+
+
+    
 });
 // Things need to be done when page first load
 function loadFirstPage() {
