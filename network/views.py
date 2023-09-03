@@ -1,5 +1,6 @@
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.db.models import Count
 from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseRedirect
 from django.shortcuts import render
@@ -9,7 +10,8 @@ from .models import User, Post, Comment
 from .forms import NewPost
 
 def index(request):
-    posts = Post.objects.all().order_by('-date')
+    posts = Post.objects.all()
+    print(posts)
     
 
     return render(request, "network/index.html", {
